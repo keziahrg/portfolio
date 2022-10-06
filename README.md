@@ -1,6 +1,6 @@
 # Keziah Rackley-Gale / Software Engineer
 
-# 👋 Welcome to my portfolio
+## 👋 Welcome to my portfolio
 
 Kia ora! My name's Keziah. I’m a software engineer who specialises in creating bespoke digital solutions.
 
@@ -20,12 +20,13 @@ Inside of this [Astro](https://astro.build) project, you'll see the following fo
 ├── src/
 │   ├── components/
 │   │   └── Hero
-│   │       └── Hero.astro
-│   │       └── Hero.module.css
+│   │       ├── Hero.astro
+│   │       ├── Hero.module.css
 │   │       └── index.ts
 │   ├── layouts/
+│   │   ├── index.ts
 │   │   └── Layout.astro
-│   └── pages/
+│   ├── pages/
 │   │   └── index.astro
 │   └── styles/
 │       └── global.css
