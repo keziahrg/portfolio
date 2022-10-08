@@ -24,7 +24,7 @@ export const Button = ({
                     className={styles.button}
                     title={label}
                     href={href}
-                    target={openInNewWindow ? '__blank' : '__self'}
+                    target={openInNewWindow ? '__blank' : undefined}
                     rel="noopener noreferrer"
                 >
                     {label}

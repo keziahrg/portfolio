@@ -2,14 +2,15 @@
 import styles from './SectionHeader.module.css'
 
 export interface Props {
+    id?: string
     preheading?: string
     heading: string
 }
 
-const { preheading, heading } = Astro.props
+const { id, preheading, heading } = Astro.props
 ---
 
-<h2 class={styles['section-header']}>
+<h2 id={id} class={styles['section-header']}>
     {
         preheading && (
             <strong class={styles['section-header__preheading']}>
