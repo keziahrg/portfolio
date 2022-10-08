@@ -8,9 +8,6 @@
     background-color: var(--purple);
     text-align: center;
     text-decoration: none;
-    font-family: 'National', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: greyscale;
     font-size: 1rem;
     box-shadow: none;
     border: none;

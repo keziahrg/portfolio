@@ -1,0 +1,25 @@
+.section-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.25rem;
+}
+
+.section-header__preheading {
+    display: block;
+    color: var(--purple);
+    font-size: 0.75rem;
+    font-family: 'National Medium', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-header {
+        padding-bottom: 1rem;
+    }
+
+    .section-header__preheading {
+        font-size: 1rem;
+    }
+}

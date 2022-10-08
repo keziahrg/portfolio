@@ -1,0 +1,21 @@
+---
+import styles from './SectionHeader.module.css'
+
+export interface Props {
+    preheading?: string
+    heading: string
+}
+
+const { preheading, heading } = Astro.props
+---
+
+<h2 class={styles['section-header']}>
+    {
+        preheading && (
+            <strong class={styles['section-header__preheading']}>
+                {preheading}
+            </strong>
+        )
+    }
+    <span class={styles['section-header__heading']}>{heading}</span>
+</h2>
