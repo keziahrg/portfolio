@@ -1,0 +1,44 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.625rem 0;
+    color: var(--white);
+    background-color: var(--purple);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'National', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    font-size: 1rem;
+    box-shadow: none;
+    border: none;
+    transition: background-color 0.25s ease, opacity 0.25s ease;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: var(--purple-tint);
+}
+
+.button[disabled] {
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+@media only screen and (min-width: 768px) {
+    .button {
+        width: fit-content;
+        padding: 0.625rem 3.75rem;
+        font-size: 1.125rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .button {
+        color: var(--black);
+    }
+}

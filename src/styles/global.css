@@ -1,5 +1,6 @@
 :root {
     --purple: #4f46e5;
+    --purple-tint: #473fce;
     --black: #171717;
     --white: #f4f4f5;
     --grey: #e4e4e7;
@@ -15,6 +16,7 @@ body {
 @media (prefers-color-scheme: dark) {
     body {
         --purple: #818cf8;
+        --purple-tint: #747edf;
         --grey: #27272a;
         color: var(--white);
         background-color: var(--black);

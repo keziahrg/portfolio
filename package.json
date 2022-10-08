@@ -12,10 +12,14 @@
         "prepare": "husky install"
     },
     "dependencies": {
+        "@astrojs/react": "^1.1.4",
         "astro": "^1.4.4",
-        "classnames": "^2.3.2"
+        "classnames": "^2.3.2",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
     },
     "devDependencies": {
+        "@types/react": "^18.0.21",
         "husky": "^8.0.1",
         "lint-staged": "^13.0.3",
         "prettier": "2.7.1"
