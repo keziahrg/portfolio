@@ -1,0 +1,21 @@
+---
+import styles from './Container.module.css'
+import cn from 'classnames'
+
+export interface Props {
+    width?: 'sm' | 'md' | 'lg'
+    paddingTop?: boolean
+    paddingBottom?: boolean
+}
+
+const { width, paddingTop, paddingBottom } = Astro.props
+const classes = cn([styles.container], {
+    [styles[`container--padding-top`]]: paddingTop,
+    [styles[`container--padding-bottom`]]: paddingBottom,
+    [styles[`container--width-${width}`]]: width,
+})
+---
+
+<div class={classes}>
+    <slot />
+</div>

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: var(--gutters);
+    padding-right: var(--gutters);
+}
+
+@media only screen and (max-width: calc(1200px + 40px)) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container--width-sm {
+    max-width: 540px;
+}
+
+.container--width-md {
+    max-width: 600px;
+}
+
+.container--width-lg {
+    max-width: 1200px;
+}
+
+.container--padding-top {
+    padding-top: var(--padding);
+}
+
+.container--padding-bottom {
+    padding-bottom: var(--padding);
+}
