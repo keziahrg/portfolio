@@ -1,0 +1,22 @@
+:root {
+    --purple: #4f46e5;
+    --black: #171717;
+    --white: #f4f4f5;
+    --grey: #e4e4e7;
+    --gutters: 1.25rem;
+    --padding: calc(#{var(--gutters)} * 5);
+}
+
+body {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --purple: #818cf8;
+        --grey: #27272a;
+        color: var(--white);
+        background-color: var(--black);
+    }
+}
