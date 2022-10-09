@@ -1,11 +1,17 @@
 :root {
-    --purple: #4f46e5;
-    --purple-tint: #473fce;
-    --black: #171717;
-    --white: #f4f4f5;
-    --grey: #e4e4e7;
+    --purple: rgb(79, 70, 229);
+    --purple-shade: rgb(71, 63, 206);
+    --black: rgb(23, 23, 23);
+    --white: rgb(244, 244, 245);
+    --grey: rgb(228, 228, 231);
+    --success: rgb(187, 247, 208);
+    --success-shade: rgb(21, 128, 61);
+    --error: rgb(254, 202, 202);
+    --error-shade: rgb(185, 28, 28);
     --gutters: 1.25rem;
     --padding: 6.25rem;
+    --shadow-color: rgba(79, 70, 229, 0.25);
+    --shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
 body {
@@ -15,9 +21,10 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        --purple: #818cf8;
-        --purple-tint: #747edf;
-        --grey: #27272a;
+        --purple: rgb(129, 140, 248);
+        --purple-shade: rgb(116, 126, 223);
+        --grey: rgb(39, 39, 42);
+        --shadow-color: rgba(129, 140, 248, 0.25);
         color: var(--white);
         background-color: var(--black);
     }
@@ -45,7 +52,6 @@ textarea {
     font-family: 'National', sans-serif;
 }
 
-h1,
 h3,
 p,
 a,
@@ -63,6 +69,7 @@ h2 {
 
 h1 {
     font-size: 5rem;
+    line-height: 1.2;
 }
 
 h2 {

@@ -8,17 +8,17 @@
     background-color: var(--purple);
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
     box-shadow: none;
     border: none;
     transition: background-color 0.25s ease, opacity 0.25s ease;
     cursor: pointer;
+    box-shadow: var(--shadow);
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-    background-color: var(--purple-tint);
+    background-color: var(--purple-shade);
 }
 
 .button[disabled] {

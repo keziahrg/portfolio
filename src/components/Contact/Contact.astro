@@ -1,15 +1,21 @@
 ---
 import { Container } from '../Container'
+import { Form } from '../Form'
 import { SectionHeader } from '../SectionHeader'
 import styles from './Contact.module.css'
 ---
 
-<section class={styles.contact}>
+<section>
     <Container width="md" paddingBottom>
         <SectionHeader
             id="contact"
             preheading="Contact:"
             heading="Get in touch"
         />
+        <p class={styles['contact__lead-text']}>
+            I’m currently open to work. If you have a role you think I’d be
+            perfect for, contact me — I’d love to hear from you!
+        </p>
+        <Form client:load />
     </Container>
 </section>

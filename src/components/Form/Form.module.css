@@ -1,0 +1,85 @@
+label {
+    color: var(--purple);
+    font-size: 0.75rem;
+    font-family: 'National Medium', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+input,
+textarea {
+    padding: 0.625rem;
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+textarea {
+    border: none;
+}
+
+.form__body,
+.form__inputs,
+.form__input,
+.form__textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__body,
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.form__input,
+.form__textarea {
+    max-width: 100%;
+    width: 100%;
+    gap: 0.625rem;
+}
+
+.form__success,
+.form__error {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.form__success {
+    background-color: #15803d;
+    color: #bbf7d0;
+}
+
+.form__error {
+    background-color: var(--error-shade);
+    color: var(--error);
+}
+
+@media (prefers-color-scheme: dark) {
+    input,
+    textarea {
+        color: var(--white);
+    }
+
+    .form__success {
+        background-color: var(--success);
+        color: var(--success-shade);
+    }
+
+    .form__error {
+        background-color: var(--error);
+        color: var(--error-shade);
+    }
+}
+
+@media only screen and (min-width: calc(768px)) {
+    .form__inputs {
+        flex-direction: row;
+    }
+
+    .form__success,
+    .form__error {
+        margin-bottom: 2.5rem;
+    }
+}

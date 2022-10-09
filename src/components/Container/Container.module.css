@@ -3,7 +3,6 @@
     margin: 0 auto;
     padding-left: var(--gutters);
     padding-right: var(--gutters);
-    box-sizing: content-box;
 }
 
 @media only screen and (min-width: calc(1200px + 40px)) {
@@ -14,11 +13,11 @@
 }
 
 .container--width-sm {
-    max-width: 540px;
+    max-width: 580px;
 }
 
 .container--width-md {
-    max-width: 600px;
+    max-width: 640px;
 }
 
 .container--width-lg {
