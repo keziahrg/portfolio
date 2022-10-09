@@ -1,2 +1,46 @@
 .hero {
 }
+
+.hero__heading {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.hero__preheading {
+    font-family: 'National', sans-serif;
+    font-weight: 400;
+    font-size: 1.4375rem;
+}
+
+.hero__name {
+    display: flex;
+}
+
+.hero__last-name {
+    display: none;
+}
+
+.hero__subheading {
+    font-size: 1.125rem;
+    padding-bottom: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero__preheading {
+        font-size: 2rem;
+    }
+
+    .hero__name {
+        flex-direction: row;
+    }
+
+    .hero__last-name {
+        display: inline-block;
+    }
+
+    .hero__subheading {
+        font-size: 1.5rem;
+        padding-bottom: 1.875rem;
+    }
+}

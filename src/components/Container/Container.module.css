@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding-left: var(--gutters);
     padding-right: var(--gutters);
+    box-sizing: content-box;
 }
 
 @media only screen and (min-width: calc(1200px + 40px)) {

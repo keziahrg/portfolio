@@ -5,7 +5,7 @@
     --white: #f4f4f5;
     --grey: #e4e4e7;
     --gutters: 1.25rem;
-    --padding: calc(#{var(--gutters)} * 5);
+    --padding: 6.25rem;
 }
 
 body {

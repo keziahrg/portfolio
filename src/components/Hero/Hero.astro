@@ -5,8 +5,19 @@ import styles from './Hero.module.css'
 ---
 
 <section class={styles.hero}>
-    <Container width="md" paddingBottom>
-        <h1>Hero</h1>
+    <Container width="md" paddingTop paddingBottom>
+        <h1 class={styles.hero__heading}>
+            <span class={styles.hero__preheading}> Hey, my name’s</span>
+            <span class={styles.hero__name}>
+                Keziah
+                <span class={styles['hero__last-name']}>&nbsp;Rackley-Gale</span
+                >
+            </span>
+        </h1>
+        <p class={styles.hero__subheading}>
+            I’m a software engineer who specialises in creating bespoke digital
+            solutions.
+        </p>
         <Button href="#contact" label="Get in touch" />
     </Container>
 </section>
