@@ -1,12 +1,50 @@
 ---
 import { Container } from '../Container'
 import styles from './Footer.module.css'
+import { Icon } from 'astro-icon'
 ---
 
 <footer class={styles.footer}>
     <Container width="lg">
-        <p class={styles.footer__meta}>
-            Designed and developed by Keziah Rackley-Gale
-        </p>
+        <div class={styles.footer__content}>
+            <ul class={styles.footer__list}>
+                <li>
+                    <a
+                        class={styles.footer__link}
+                        href="https://github.com/keziahrg"
+                        target="__blank"
+                        title="GitHub"
+                        rel="noopener noreferrer"
+                    >
+                        <Icon name="fa-brands:github" />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class={styles.footer__link}
+                        href="https://www.linkedin.com/in/keziahrg/"
+                        target="__blank"
+                        title="LinkedIn"
+                        rel="noopener noreferrer"
+                    >
+                        <Icon name="fa-brands:linkedin-in" />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class={styles.footer__link}
+                        href="https://twitter.com/keziahrg"
+                        target="__blank"
+                        title="Twitter"
+                        rel="noopener noreferrer"
+                    >
+                        <Icon name="fa-brands:twitter" />
+                    </a>
+                </li>
+            </ul>
+            <p class={styles.footer__meta}>
+                Designed and developed by Keziah Rackley-Gale
+            </p>
+        </div>
     </Container>
 </footer>

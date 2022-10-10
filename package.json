@@ -13,10 +13,13 @@
     },
     "dependencies": {
         "@astrojs/react": "^1.1.4",
+        "add": "^2.0.6",
         "astro": "^1.4.4",
+        "astro-icon": "^0.7.3",
         "classnames": "^2.3.2",
         "react": "^18.0.0",
-        "react-dom": "^18.0.0"
+        "react-dom": "^18.0.0",
+        "yarn": "^1.22.19"
     },
     "devDependencies": {
         "@types/react": "^18.0.21",
