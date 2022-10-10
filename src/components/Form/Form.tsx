@@ -3,12 +3,14 @@ import { Button } from '../Button'
 import styles from './Form.module.css'
 
 export const Form = () => {
-    const [formState, setFormState] = useState('ready')
+    const [formState, setFormState] = useState<'ready' | 'success' | 'error'>(
+        'ready'
+    )
 
     const handleFormSubmission = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        const form = e.currentTarget
+        const form: HTMLFormElement = e.currentTarget
         const formData = new FormData(form)
         const formValues = Array.from(formData, ([key, value]) => [
             key,

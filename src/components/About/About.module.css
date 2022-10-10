@@ -1,2 +1,16 @@
-.about {
+@media only screen and (min-width: 820px) {
+    .about__content {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        column-gap: 10%;
+    }
+
+    .about__image {
+        grid-column: 2 / 3;
+        grid-row: 1 / 11;
+    }
+
+    .about__image + br {
+        display: none;
+    }
 }
