@@ -1,0 +1,40 @@
+---
+import styles from './Socials.module.css'
+import { Icon } from 'astro-icon'
+---
+
+<ul class={styles.socials}>
+    <li>
+        <a
+            class={styles.socials__link}
+            href="https://github.com/keziahrg"
+            target="__blank"
+            title="GitHub"
+            rel="noopener noreferrer"
+        >
+            <Icon name="fa-brands:github" />
+        </a>
+    </li>
+    <li>
+        <a
+            class={styles.socials__link}
+            href="https://www.linkedin.com/in/keziahrg/"
+            target="__blank"
+            title="LinkedIn"
+            rel="noopener noreferrer"
+        >
+            <Icon name="fa-brands:linkedin-in" />
+        </a>
+    </li>
+    <li>
+        <a
+            class={styles.socials__link}
+            href="https://twitter.com/keziahrg"
+            target="__blank"
+            title="Twitter"
+            rel="noopener noreferrer"
+        >
+            <Icon name="fa-brands:twitter" />
+        </a>
+    </li>
+</ul>

@@ -9,30 +9,6 @@
     row-gap: 1.875rem;
 }
 
-.footer__list {
-    display: flex;
-    gap: 1.875rem;
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer__link {
-    color: var(--purple);
-}
-
-.footer__link:hover,
-.footer__link:focus,
-.footer__link:active {
-    color: var(--purple-shade);
-}
-
-.footer__link > svg {
-    width: 1em;
-    height: 1em;
-    font-size: 1.875rem;
-}
-
 .footer__meta {
     font-size: 0.875rem;
     text-align: center;
@@ -43,15 +19,6 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-    }
-
-    .footer__list {
-        margin: 0;
-        gap: 1.25rem;
-    }
-
-    .footer__link > svg {
-        font-size: 1.375rem;
     }
 
     .footer__meta {

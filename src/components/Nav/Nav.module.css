@@ -1,0 +1,29 @@
+.nav {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    gap: 3.125rem;
+    list-style-type: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+    line-height: normal;
+}
+
+.nav__link:hover,
+.nav__link:active,
+.nav__link:focus {
+    color: var(--purple);
+    transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+@media only screen and (min-width: calc(768px)) {
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+}
