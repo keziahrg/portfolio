@@ -1,8 +1,8 @@
-# Keziah Rackley-Gale / Software Engineer
+# Keziah Rackley-Gale / Software Developer
 
 ## 👋 Welcome to my portfolio
 
-Kia ora! My name's Keziah. I’m a software engineer who specialises in creating bespoke digital solutions.
+Kia ora! My name's Keziah. I’m a software developer who specialises in creating bespoke digital solutions.
 
 ## 🚀 Project Structure
 
@@ -37,11 +37,11 @@ Inside of this [Astro](https://astro.build) project, you'll see the following fo
 
 All commands are run from the root of the project, from a terminal:
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `yarn`              | Installs dependencies                              |
-| `yarn dev`          | Starts local dev server at `localhost:3000`        |
-| `yarn build`        | Build the production site to `./dist/`             |
-| `yarn preview`      | Preview the build locally, before deploying        |
-| `yarn astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `yarn astro --help` | Get help using the Astro CLI                       |
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm i`                | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build the production site to `./dist/`             |
+| `npm run preview`      | Preview the build locally, before deploying        |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `npm run astro --help` | Get help using the Astro CLI                       |
