@@ -1,0 +1,26 @@
+{
+    "name": "portfolio",
+    "type": "module",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "prepare": "husky install",
+        "format": "prettier . --write --ignore-unknown"
+    },
+    "dependencies": {
+        "astro": "^2.0.1"
+    },
+    "devDependencies": {
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.0",
+        "prettier": "^2.8.3"
+    },
+    "lint-staged": {
+        "**/*": "prettier . --write --ignore-unknown"
+    }
+}

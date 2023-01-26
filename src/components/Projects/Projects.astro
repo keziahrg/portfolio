@@ -1,0 +1,30 @@
+---
+import styles from './Projects.module.css'
+import { Card } from '../Card'
+---
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li class={styles['projects__list-item']}>
+            <Card
+                title="Torchbug bot"
+                description="A Twitter bot made to send daily, pleading tweets to @TESOnline."
+                link={{
+                    href: 'https://github.com/keziahrg/torchbug-bot',
+                    ariaLabel: 'Github repo',
+                }}
+            />
+        </li>
+        <li class={styles['projects__list-item']}>
+            <Card
+                title="GBP to NZD"
+                description="A micro app for converting Great British pounds (GBP) to New Zealand dollars (NZD)."
+                link={{
+                    href: 'https://github.com/keziahrg/gbp-to-nzd',
+                    ariaLabel: 'Github repo',
+                }}
+            />
+        </li>
+    </ul>
+</section>

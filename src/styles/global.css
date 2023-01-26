@@ -1,0 +1,65 @@
+:root {
+    --black: rgb(23, 23, 23);
+    --white: rgb(244, 244, 245);
+}
+
+body {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--white);
+        background-color: var(--black);
+    }
+}
+
+main {
+    padding: 6rem 0;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'National', sans-serif;
+}
+
+h1,
+p:not(:last-child) {
+    margin-bottom: 1.75rem;
+}
+
+h2,
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
