@@ -1,18 +1,28 @@
 :root {
-    --black: rgb(23, 23, 23);
-    --white: rgb(244, 244, 245);
+    --background-gradient-0: rgb(23, 1, 0);
+    --background-gradient-1: rgb(1, 2, 30);
+    --foreground-pretitle: rgb(77, 84, 251);
+    --foreground-title: rgb(220, 222, 253);
+    --foreground-body: rgb(236, 237, 254);
+    --foreground-accent: rgb(132, 137, 251);
+    --foreground-accent--hover: rgba(93, 100, 251);
 }
 
 body {
-    color: var(--black);
-    background-color: var(--white);
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        color: var(--white);
-        background-color: var(--black);
-    }
+    height: 100%;
+    color: var(--foreground-body);
+    background-image: radial-gradient(
+        55% 85% at 50% 15%,
+        var(--background-gradient-0) 0%,
+        var(--background-gradient-1) 100%
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
 }
 
 main {
@@ -26,33 +36,67 @@ section {
 }
 
 h1,
-h2,
-h3 {
-    font-weight: 400;
-}
-
-h1,
-h2,
-h3,
+h4,
 p,
 a {
     font-size: 1rem;
-    line-height: 1.6;
+}
+
+h2,
+p,
+a {
     font-family: 'National', sans-serif;
 }
 
 h1,
+h4,
 p:not(:last-child) {
     margin-bottom: 1.75rem;
 }
 
-h2,
+h1,
 h3 {
+    font-family: 'Newzald', sans-serif;
+}
+
+h1,
+h3,
+h4 {
+    color: var(--foreground-title);
+}
+
+h3,
+h4 {
     margin-bottom: 0.5rem;
 }
 
+h2,
+h4 {
+    font-family: 'National Medium', sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    margin-bottom: 0;
+    color: var(--foreground-pretitle);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+h3 {
+    line-height: normal;
+    font-size: 2rem;
+}
+
 a {
-    color: inherit;
+    color: var(--foreground-accent);
+    transition: color 100ms linear;
+}
+
+a:hover {
+    color: var(--foreground-accent--hover);
 }
 
 ul {
@@ -62,4 +106,26 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+@media only screen and (min-width: calc(640px + 40px)) {
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    h3 {
+        font-size: 2.125rem;
+    }
+
+    h1,
+    h4,
+    p,
+    a {
+        font-size: 1.125rem;
+    }
+
+    h2 {
+        font-size: 0.875rem;
+    }
 }

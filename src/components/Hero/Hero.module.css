@@ -1,0 +1,9 @@
+.hero__lead {
+    font-size: 1.125rem;
+}
+
+@media only screen and (min-width: calc(640px + 40px)) {
+    .hero__lead {
+        font-size: 1.25rem;
+    }
+}

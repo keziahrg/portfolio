@@ -5,3 +5,19 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'National Medium';
+    src: url('/fonts/national-medium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Newzald';
+    src: url('/fonts/newzald-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

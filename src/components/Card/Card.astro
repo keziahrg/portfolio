@@ -1,4 +1,6 @@
 ---
+import styles from './Card.module.css'
+
 export interface Props {
     title: string
     description: string
@@ -8,16 +10,30 @@ export interface Props {
 const { title, description, link } = Astro.props
 ---
 
-<div>
-    <a
-        href={link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={link.ariaLabel}
-    >
-        <h3>{title}</h3>
-    </a>
-    <p>
+<a
+    href={link.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={link.ariaLabel}
+    class={styles.card}
+>
+    <div class={styles.card__header}>
+        <h4 class={styles.card__title}>{title}</h4>
+        <svg
+            class={styles.card__icon}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 10"
+        >
+            <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M2 .5h7.5V8h-1V2.2L1.35 9.36l-.7-.7L7.79 1.5H2v-1Z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </div>
+
+    <p class={styles.card__description}>
         {description}
     </p>
-</div>
+</a>
