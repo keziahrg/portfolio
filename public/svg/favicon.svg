@@ -1,13 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
+  <path class="path" d="M102.545 122.906V67.208l16.815-6.042-1.839-8.407H51.839L50 61.165l16.814 6.042V192.79L50 198.834l1.84 8.407h65.681l1.839-8.407-16.815-6.043v-58.325h12.086l41.247 72.775h52.283l1.839-8.67-19.704-5.254-48.342-79.869 39.409-47.553 17.865-4.73-1.576-8.407h-52.283l-1.313 8.408 16.026 6.305-43.087 53.333-14.45 2.102Z" fill="#4D54FB"/>
+  <style>
+    @media (prefers-color-scheme:dark){path{fill:#8489FB}}
   </style>
 </svg>
