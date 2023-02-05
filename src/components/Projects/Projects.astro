@@ -3,9 +3,25 @@ import styles from './Projects.module.css'
 import { Card } from '../Card'
 ---
 
-<section>
-    <h2 class={styles.projects__title}>Projects</h2>
-    <h3>Stuff I've created</h3>
+<section class={styles.projects}>
+    <div class={styles['projects__icon-container']}>
+        <svg
+            class={styles.projects__icon}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+        >
+            <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 13.5 16.5 9 12 4.5M6 4.5 1.5 9 6 13.5"></path>
+        </svg>
+    </div>
+    <div class={styles.projects__line}></div>
+    <h2 class={styles.projects__pretitle}>Projects</h2>
+    <h3 class={styles.projects__title}>Stuff I've created</h3>
     <ul class={styles.projects__list}>
         <li>
             <Card
