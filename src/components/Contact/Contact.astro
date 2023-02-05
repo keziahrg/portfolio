@@ -1,46 +1,44 @@
 ---
-import styles from './Contact.module.css'
+import { Section } from '../Section'
 ---
 
-<section class={styles.contact}>
-    <div class={styles['contact__icon-container']}>
-        <svg
-            class={styles.contact__icon}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-        >
-            <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3 3h12c.82 0 1.5.67 1.5 1.5v9c0 .82-.68 1.5-1.5 1.5H3a1.5 1.5 0 0 1-1.5-1.5v-9C1.5 3.67 2.17 3 3 3Z"
-            ></path>
-            <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M16.5 4.5 9 9.75 1.5 4.5"></path>
-        </svg>
-    </div>
-    <div class={styles.contact__line}></div>
-    <h2 class={styles.contact__pretitle}>Connect</h2>
-    <h3 class={styles.contact__title}>Let's have a yarn</h3>
-    <div class={styles.contact__body}>
-        <p>
-            I'm currently in the process of relocating to London and am open to
-            new work opportunities and making connections.
-        </p>
-        <p>
-            If you'd like to chat, feel free to reach out to me on <a
-                href="https://twitter.com/keziahrg"
-                target="__blank"
-                rel="noopener noreferrer nofollow">Twitter</a
-            > or <a
-                href="https://www.linkedin.com/in/keziahrg/"
-                target="__blank"
-                rel="noopener noreferrer nofollow">LinkedIn</a
-            >.
-        </p>
-    </div>
-</section>
+<Section
+    pretitle="Connect"
+    title="Let's have a yarn"
+    theme="orange"
+    showDecoration={false}
+>
+    <svg
+        slot="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 18 18"
+    >
+        <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 3h12c.82 0 1.5.67 1.5 1.5v9c0 .82-.68 1.5-1.5 1.5H3a1.5 1.5 0 0 1-1.5-1.5v-9C1.5 3.67 2.17 3 3 3Z"
+        ></path>
+        <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M16.5 4.5 9 9.75 1.5 4.5"></path>
+    </svg>
+    <p>
+        I'm currently in the process of relocating to London and am open to new
+        work opportunities and making connections.
+    </p>
+    <p>
+        If you'd like to chat, feel free to reach out to me on <a
+            href="https://twitter.com/keziahrg"
+            target="__blank"
+            rel="noopener noreferrer nofollow">Twitter</a
+        > or <a
+            href="https://www.linkedin.com/in/keziahrg/"
+            target="__blank"
+            rel="noopener noreferrer nofollow">LinkedIn</a
+        >.
+    </p>
+</Section>

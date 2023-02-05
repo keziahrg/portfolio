@@ -1,40 +1,33 @@
 ---
-import styles from './About.module.css'
+import { Section } from '../Section'
 ---
 
-<section class={styles.about}>
-    <div class={styles['about__icon-container']}>
-        <svg
-            class={styles.about__icon}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-        >
-            <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M1.5 2.25H6a3 3 0 0 1 3 3v10.5a2.25 2.25 0 0 0-2.25-2.25H1.5V2.25ZM16.5 2.25H12a3 3 0 0 0-3 3v10.5a2.25 2.25 0 0 1 2.25-2.25h5.25V2.25Z"
-            ></path>
-        </svg>
-    </div>
-    <div class={styles.about__line}></div>
-    <h2 class={styles.about__pretitle}>Backstory</h2>
-    <h3 class={styles.about__title}>Get to know me</h3>
-    <div class={styles.about__body}>
-        <p>
-            Kia ora! My name's Keziah (pronounced kee-zee-ah). I'm a front-end
-            software developer who specialises in building bespoke digital
-            solutions.
-        </p>
-        <p>
-            Originally from Aotearoa New Zealand, I'll soon be one of the
-            thousands of Kiwis who call London home.
-        </p>
-        <p>
-            In the last few years, I've cut my teeth at one of the most
-            well-known marketing agencies in New Zealand and, most recently,
-            honed my skills at a close-knit digital studio.
-        </p>
-    </div>
-</section>
+<Section pretitle="Backstory" title="Get to know me" theme="purple">
+    <svg
+        slot="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 18 18"
+    >
+        <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M1.5 2.25H6a3 3 0 0 1 3 3v10.5a2.25 2.25 0 0 0-2.25-2.25H1.5V2.25ZM16.5 2.25H12a3 3 0 0 0-3 3v10.5a2.25 2.25 0 0 1 2.25-2.25h5.25V2.25Z"
+        ></path>
+    </svg>
+    <p>
+        Kia ora! My name's Keziah (pronounced kee-zee-ah). I'm a front-end
+        software developer who specialises in building bespoke digital
+        solutions.
+    </p>
+    <p>
+        Originally from Aotearoa New Zealand, I'll soon be one of the thousands
+        of Kiwis who call London home.
+    </p>
+    <p>
+        In the last few years, I've cut my teeth at one of the most well-known
+        marketing agencies in New Zealand and, most recently, honed my skills at
+        a close-knit digital studio.
+    </p>
+</Section>

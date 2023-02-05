@@ -1,33 +1,29 @@
 ---
 import styles from './Projects.module.css'
+import { Section } from '../Section'
 import { Card } from '../Card'
 ---
 
-<section class={styles.projects}>
-    <div class={styles['projects__icon-container']}>
-        <svg
-            class={styles.projects__icon}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 18 18"
-        >
-            <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 5.25H3c-.83 0-1.5.67-1.5 1.5v7.5c0 .83.67 1.5 1.5 1.5h12c.83 0 1.5-.67 1.5-1.5v-7.5c0-.83-.67-1.5-1.5-1.5Z"
-            ></path>
-            <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 15.75v-12a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 6 3.75v12"
-            ></path>
-        </svg>
-    </div>
-    <div class={styles.projects__line}></div>
-    <h2 class={styles.projects__pretitle}>Projects</h2>
-    <h3 class={styles.projects__title}>Stuff I've created</h3>
+<Section pretitle="Projects" title="Stuff I've created" theme="green">
+    <svg
+        slot="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 18 18"
+    >
+        <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 5.25H3c-.83 0-1.5.67-1.5 1.5v7.5c0 .83.67 1.5 1.5 1.5h12c.83 0 1.5-.67 1.5-1.5v-7.5c0-.83-.67-1.5-1.5-1.5Z"
+        ></path>
+        <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 15.75v-12a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 6 3.75v12"
+        ></path>
+    </svg>
     <ul class={styles.projects__list}>
         <li>
             <Card
@@ -60,4 +56,4 @@ import { Card } from '../Card'
             />
         </li>
     </ul>
-</section>
+</Section>
