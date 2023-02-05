@@ -2,7 +2,7 @@
 
 ## 👋 Welcome to my portfolio
 
-Kia ora! My name's Keziah. I’m a software developer who specialises in creating bespoke digital solutions.
+Kia ora! My name's Keziah. I’m a front-end software developer who specialises in creating bespoke digital solutions.
 
 ## 🚀 Project Structure
 
