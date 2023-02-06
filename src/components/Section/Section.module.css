@@ -50,7 +50,7 @@
 .section__icon > svg {
     height: 1em;
     width: 1em;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 .section__decoration {
@@ -70,8 +70,16 @@
     box-shadow: 0px 1px 3px var(--foreground-blue-tint);
 }
 
+.section__body > *:first-child {
+    margin-top: 0.5rem;
+}
+
 .section__pretitle {
     grid-row: 1 / 2;
+}
+
+.section__title {
+    margin: 0.438rem 0 0;
 }
 
 .section--theme_purple .section__icon::after {
@@ -116,4 +124,10 @@
 
 .section--theme_orange .section__pretitle {
     color: var(--foreground-orange-tint);
+}
+
+@media only screen and (min-width: calc(640px + 40px)) {
+    .section__title {
+        margin: 0.1875rem 0 0;
+    }
 }
