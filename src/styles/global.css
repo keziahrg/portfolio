@@ -7,8 +7,8 @@
     --foreground-blue-tint: rgba(171, 180, 255, 1);
     --foreground-purple-tint: rgba(210, 168, 255, 1);
     --foreground-purple-shade: rgba(163, 113, 247, 1);
-    --foreground-green-tint: rgba(46, 160, 67, 1);
-    --foreground-green-shade: rgba(25, 108, 46, 1);
+    --foreground-green-tint: rgba(126, 231, 135, 1);
+    --foreground-green-shade: rgba(46, 160, 67, 1);
     --foreground-orange-tint: rgba(255, 214, 204, 1);
     --foreground-orange-shade: rgba(236, 101, 71, 1);
 }
@@ -134,5 +134,47 @@ li {
     p,
     a {
         font-size: 1.125rem;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animate--scale.animate--in {
+        transform: scaleY(1);
+    }
+
+    .animate--scale {
+        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: scaleY(0);
+        transform-origin: 0 0;
+        transition-delay: 500ms;
+    }
+
+    .animate--fade.animate--in,
+    .animate--translate_x.animate--in {
+        opacity: 1;
+    }
+
+    .animate--fade,
+    .animate--translate_x {
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+            transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        opacity: 0;
+        transition-delay: 300ms;
+    }
+
+    .animate--fade.animate--in {
+        transform: scale(1);
+    }
+
+    .animate--fade {
+        transform: scale(0.96);
+    }
+
+    .animate--translate_x.animate--in {
+        transform: translateX(0);
+    }
+
+    .animate--translate_x {
+        transform: translateX(-15px);
     }
 }

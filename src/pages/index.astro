@@ -12,3 +12,43 @@ import { Contact } from '../components/Contact'
     <Projects />
     <Contact />
 </Layout>
+
+<script>
+    const sectionIntersectionObserver = new IntersectionObserver(
+        (sectionElements) => {
+            sectionElements.forEach((sectionElement) => {
+                const translatableElements =
+                    sectionElement.target.querySelectorAll(
+                        '.animate--translate_x'
+                    )
+                const scaleableElements =
+                    sectionElement.target.querySelectorAll('.animate--scale')
+                const fadeableElements =
+                    sectionElement.target.querySelectorAll('.animate--fade')
+
+                const elementsToAnimate = [
+                    ...translatableElements,
+                    ...scaleableElements,
+                    ...fadeableElements,
+                ]
+
+                elementsToAnimate.forEach((elementToAnimate) => {
+                    if (
+                        elementToAnimate !== null &&
+                        sectionElement.isIntersecting
+                    ) {
+                        elementToAnimate.classList.add('animate--in')
+                    }
+                })
+            })
+        }
+    )
+
+    const sectionElementsToAnimate = document.querySelectorAll(
+        '#animatedSectionTrigger'
+    )
+
+    sectionElementsToAnimate.forEach((sectionElement) => {
+        sectionIntersectionObserver.observe(sectionElement)
+    })
+</script>

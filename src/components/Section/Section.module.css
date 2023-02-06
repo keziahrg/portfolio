@@ -1,4 +1,4 @@
-.section {
+.section__inner {
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto 1fr;
