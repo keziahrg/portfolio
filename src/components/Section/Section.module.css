@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .section__icon::after {
@@ -63,7 +64,7 @@
     left: 0;
     right: 0;
     width: 1px;
-    height: calc(100% + 5.125rem);
+    height: calc(100% + 7rem);
     margin: auto;
     border-radius: 1rem;
     box-shadow: 0px 1px 3px var(--foreground-blue-tint);
@@ -115,10 +116,4 @@
 
 .section--theme_orange .section__pretitle {
     color: var(--foreground-orange-tint);
-}
-
-@media only screen and (min-width: calc(640px + 40px)) {
-    .section__decoration::after {
-        height: calc(100% + 5.25rem);
-    }
 }
