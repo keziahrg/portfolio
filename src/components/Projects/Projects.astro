@@ -57,3 +57,17 @@ import { Card } from '../Card'
         </li>
     </ul>
 </Section>
+
+<script>
+    const cards: NodeListOf<HTMLElement> = document.querySelectorAll('.card')
+
+    cards.forEach((card) => {
+        addEventListener('mousemove', (e: MouseEvent) => {
+            const { x, y } = card.getBoundingClientRect()
+            const xPosition = (e.clientX - x).toString()
+            const yPosition = (e.clientY - y).toString()
+            card.style.setProperty('--x', xPosition)
+            card.style.setProperty('--y', yPosition)
+        })
+    })
+</script>

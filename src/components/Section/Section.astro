@@ -11,27 +11,28 @@ export interface Props {
 const { pretitle, title, theme, showDecoration = true } = Astro.props
 ---
 
-<section class:list={[styles.section, [styles[`section--theme_${theme}`]]]}>
-    <div id="animatedSectionTrigger" class={styles.section__inner}>
-        <div class:list={[styles.section__icon, 'animate--fade']}>
-            <slot name="icon" />
-        </div>
-        {
-            showDecoration ? (
-                <div
-                    class:list={[styles.section__decoration, 'animate--scale']}
-                />
-            ) : null
-        }
+<section
+    class:list={[
+        styles.section,
+        [styles[`section--theme_${theme}`], 'section--animation_trigger'],
+    ]}
+>
+    <div class:list={[styles.section__icon, 'animate--fade']}>
+        <slot name="icon" />
+    </div>
+    {
+        showDecoration ? (
+            <div class:list={[styles.section__decoration, 'animate--scale']} />
+        ) : null
+    }
 
-        <h2 class:list={[styles.section__pretitle, 'animate--translate_x']}>
-            {pretitle}
-        </h2>
-        <h3 class:list={[styles.section__title, 'animate--translate_x']}>
-            {title}
-        </h3>
-        <div class:list={[styles.section__body, 'animate--translate_x']}>
-            <slot />
-        </div>
+    <h2 class:list={[styles.section__pretitle, 'animate--translate_x']}>
+        {pretitle}
+    </h2>
+    <h3 class:list={[styles.section__title, 'animate--translate_x']}>
+        {title}
+    </h3>
+    <div class:list={[styles.section__body, 'animate--translate_x']}>
+        <slot />
     </div>
 </section>

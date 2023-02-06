@@ -1,4 +1,4 @@
-.section__inner {
+.section {
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto 1fr;
@@ -64,7 +64,7 @@
     left: 0;
     right: 0;
     width: 1px;
-    height: calc(100% + 7rem);
+    height: calc(100% + 5rem);
     margin: auto;
     border-radius: 1rem;
     box-shadow: 0px 1px 3px var(--foreground-blue-tint);
