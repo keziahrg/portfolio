@@ -24,11 +24,15 @@ import { Card } from '../Card'
             d="M12 15.75v-12a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 6 3.75v12"
         ></path>
     </svg>
+    <p>
+        A selection of my experimentations in the world of front-end
+        development. Take a peek and see what I've been up to in my free time!
+    </p>
     <ul class={styles.projects__list}>
         <li>
             <Card
                 title="Lorem ipsum"
-                description="Lorem ipsum dolar sit amet."
+                description="Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet."
                 link={{
                     href: 'https://github.com/keziahrg',
                     ariaLabel: 'Github repo',
@@ -38,7 +42,7 @@ import { Card } from '../Card'
         <li>
             <Card
                 title="Lorem ipsum"
-                description="Lorem ipsum dolar sit amet."
+                description="Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet."
                 link={{
                     href: 'https://github.com/keziahrg/',
                     ariaLabel: 'Github repo',
@@ -48,7 +52,7 @@ import { Card } from '../Card'
         <li>
             <Card
                 title="Lorem ipsum"
-                description="Lorem ipsum dolar sit amet."
+                description="Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet."
                 link={{
                     href: 'https://github.com/keziahrg',
                     ariaLabel: 'Github repo',
@@ -62,7 +66,7 @@ import { Card } from '../Card'
     const cards: NodeListOf<HTMLElement> = document.querySelectorAll('.card')
 
     cards.forEach((card) => {
-        addEventListener('mousemove', (e: MouseEvent) => {
+        card.addEventListener('mousemove', (e: MouseEvent) => {
             const { x, y } = card.getBoundingClientRect()
             const xPosition = (e.clientX - x).toString()
             const yPosition = (e.clientY - y).toString()

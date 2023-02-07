@@ -4,6 +4,7 @@
     --foreground-body: rgba(236, 237, 254, 1);
     --foreground-accent: rgba(132, 137, 251, 1);
     --foreground-accent--hover: rgba(93, 100, 251, 1);
+    --foreground-accent-shade: rgba(10, 13, 78, 1);
     --foreground-blue-tint: rgba(171, 180, 255, 1);
     --foreground-purple-tint: rgba(210, 168, 255, 1);
     --foreground-purple-shade: rgba(163, 113, 247, 1);
