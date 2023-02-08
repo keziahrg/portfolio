@@ -27,7 +27,7 @@
     margin: auto;
     border: inherit;
     border-radius: inherit;
-    background-color: rgba(24, 25, 53, 0.93);
+    background-color: rgba(24, 25, 53, 0.92);
     z-index: 2;
 }
 
@@ -39,9 +39,11 @@
     left: calc(var(--x, 0) * 1px - 4.688rem);
     width: 9.375rem;
     height: 9.375rem;
-    background: radial-gradient(var(--foreground-body), #3984ff00 80%);
+    background: radial-gradient(
+        var(--foreground-purple-tint),
+        var(--foreground-purple-shade) 80%
+    );
     opacity: 0;
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     filter: blur(10px);
     border-radius: 50%;
 }
@@ -80,5 +82,11 @@
     .card__icon {
         font-size: 0.75rem;
         margin-top: 0.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card::after {
+        transition: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
 }

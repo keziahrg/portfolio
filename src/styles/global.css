@@ -94,7 +94,7 @@ h3 {
 
 a {
     color: var(--foreground-accent);
-    transition: color 100ms linear;
+    transition: color 250ms linear;
 }
 
 a:hover {
