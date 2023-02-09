@@ -6,12 +6,14 @@ export interface Props {
     title: string
     theme: 'purple' | 'green' | 'orange'
     showDecoration?: boolean
+    id?: string
 }
 
-const { pretitle, title, theme, showDecoration = true } = Astro.props
+const { pretitle, title, theme, showDecoration = true, id } = Astro.props
 ---
 
 <section
+    id={id}
     class:list={[
         styles.section,
         [styles[`section--theme_${theme}`], 'section--animation_trigger'],

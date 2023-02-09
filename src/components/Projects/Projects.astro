@@ -4,7 +4,12 @@ import { Section } from '../Section'
 import { Card } from '../Card'
 ---
 
-<Section pretitle="Projects" title="Stuff I've created" theme="green">
+<Section
+    id="projects"
+    pretitle="Projects"
+    title="Stuff I've created"
+    theme="green"
+>
     <svg
         slot="icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,24 +29,17 @@ import { Card } from '../Card'
             d="M12 15.75v-12a1.5 1.5 0 0 0-1.5-1.5h-3A1.5 1.5 0 0 0 6 3.75v12"
         ></path>
     </svg>
-    <p>
-        A selection of my experimentations in the world of front-end
-        development. Take a peek and see what I've been up to in my free time!
-    </p>
+    <p>Take a look at what I've been up to in my free time.</p>
     <ul class={styles.projects__list}>
         <li>
             <Card
+                description={'Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.'}
                 title="Lorem ipsum"
                 link={{
                     href: 'https://github.com/keziahrg',
                     ariaLabel: 'Github repo',
                 }}
-            >
-                <p>
-                    Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.
-                    Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.
-                </p>
-            </Card>
+            />
         </li>
         <li>
             <Card
@@ -50,12 +48,8 @@ import { Card } from '../Card'
                     href: 'https://github.com/keziahrg/',
                     ariaLabel: 'Github repo',
                 }}
-            >
-                <p>
-                    Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.
-                    Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.
-                </p>
-            </Card>
+                description={'Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.'}
+            />
         </li>
         <li>
             <Card
@@ -71,15 +65,20 @@ import { Card } from '../Card'
 </Section>
 
 <script>
-    const cards: NodeListOf<HTMLElement> = document.querySelectorAll('.card')
+    const projectsSection = document.querySelector<HTMLElement>('#projects')
+    const projectCards = document.querySelectorAll<HTMLElement>('.card')
 
-    cards.forEach((card) => {
-        card.addEventListener('mousemove', (e: MouseEvent) => {
+    const handleTrackCursor = (e: MouseEvent) => {
+        projectCards.forEach((card) => {
             const { x, y } = card.getBoundingClientRect()
             const xPosition = (e.clientX - x).toString()
             const yPosition = (e.clientY - y).toString()
             card.style.setProperty('--x', xPosition)
             card.style.setProperty('--y', yPosition)
         })
-    })
+    }
+
+    if (projectsSection) {
+        projectsSection.addEventListener('mousemove', handleTrackCursor)
+    }
 </script>
