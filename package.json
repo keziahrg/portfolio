@@ -2,6 +2,8 @@
     "name": "portfolio",
     "type": "module",
     "version": "1.0.0",
+    "repository": "git@github.com:keziahrg/portfolio.git",
+    "author": "keziahrg <rg.keziah@gmail.com>",
     "private": true,
     "scripts": {
         "dev": "astro dev",
