@@ -1,8 +1,8 @@
-# Keziah Rackley-Gale / Front-end Developer
+# Keziah Rackley-Gale / Frontend Developer
 
 ## 👋 Welcome to my portfolio
 
-Kia ora! My name's Keziah. I’m a front-end developer working with React.js, TypeScript, and Next.js 👩‍💻✨
+Kia ora! My name's Keziah. I’m a frontend developer working with React.js, TypeScript, and Next.js 👩‍💻✨
 
 ## 🚀 Project Structure
 
