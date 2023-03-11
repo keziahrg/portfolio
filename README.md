@@ -1,8 +1,8 @@
-# Keziah Rackley-Gale / Software Developer
+# Keziah Rackley-Gale / Front-end Developer
 
 ## 👋 Welcome to my portfolio
 
-Kia ora! My name's Keziah. I’m a front-end software developer who specialises in creating bespoke digital solutions.
+Kia ora! My name's Keziah. I’m a front-end developer working with React.js, TypeScript, and Next.js 👩‍💻✨
 
 ## 🚀 Project Structure
 
