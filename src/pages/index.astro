@@ -19,15 +19,19 @@ import { Contact } from '../components/Contact'
 <script>
     const sectionIntersectionObserver = new IntersectionObserver(
         (sectionElements) => {
-            sectionElements.forEach((sectionElement) => {
+            sectionElements.forEach((sectionElement, sectionIndex: number) => {
                 const translatableElements =
-                    sectionElement.target.querySelectorAll(
+                    sectionElement.target.querySelectorAll<HTMLElement>(
                         '.animate--translate_x'
                     )
                 const scaleableElements =
-                    sectionElement.target.querySelectorAll('.animate--scale')
+                    sectionElement.target.querySelectorAll<HTMLElement>(
+                        '.animate--scale'
+                    )
                 const fadeableElements =
-                    sectionElement.target.querySelectorAll('.animate--fade')
+                    sectionElement.target.querySelectorAll<HTMLElement>(
+                        '.animate--fade'
+                    )
 
                 const elementsToAnimate = [
                     ...translatableElements,
@@ -41,6 +45,20 @@ import { Contact } from '../components/Contact'
                         sectionElement.isIntersecting
                     ) {
                         elementToAnimate.classList.add('animate--in')
+
+                        if (
+                            elementToAnimate.classList.contains(
+                                'animate--scale'
+                            )
+                        ) {
+                            elementToAnimate.style.transitionDelay = `${
+                                500 * sectionIndex
+                            }ms`
+                        } else {
+                            elementToAnimate.style.transitionDelay = `${
+                                300 * sectionIndex
+                            }ms`
+                        }
                     }
                 })
             })
@@ -48,7 +66,7 @@ import { Contact } from '../components/Contact'
         { threshold: 0.75 }
     )
 
-    const sectionElementsToAnimate = document.querySelectorAll(
+    const sectionElementsToAnimate = document.querySelectorAll<HTMLElement>(
         '.section--animation_trigger'
     )
 

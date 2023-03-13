@@ -148,7 +148,6 @@ li {
         transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
         transform: scaleY(0);
         transform-origin: 0 0;
-        transition-delay: 500ms;
     }
 
     .animate--fade.animate--in,
@@ -161,7 +160,6 @@ li {
         transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
             transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
         opacity: 0;
-        transition-delay: 300ms;
     }
 
     .animate--fade.animate--in {
