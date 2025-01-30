@@ -1,0 +1,92 @@
+:root {
+  --black: #111;
+  --white: #fafafa;
+  --background: var(--white);
+  --foreground: var(--black);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: va(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+}
+
+header,
+main {
+  max-width: 65ch;
+  margin-inline: auto;
+}
+
+main {
+  padding: 3.438rem 1.25rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(28px, 0.713px + 8.527vw, 50px);
+  font-weight: 400;
+  margin-bottom: 2.625rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 1.25rem;
+}
+
+a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  will-change: opacity;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+p {
+  font-size: clamp(16px, 13.762px + 0.699vw, 18px);
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 1079px) {
+  main {
+    padding: 3.125rem 1.25rem;
+  }
+
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22">
+  <g fill-rule="evenodd" clip-path="url(#linkedin-clip-path)" clip-rule="evenodd">
+    <path fill="#007EBB" d="M2.44 22h17.12C20.9 22 22 20.9 22 19.56V2.44C22 1.1 20.9 0 19.56 0H2.44A2.44 2.44 0 0 0 0 2.44v17.12C0 20.9 1.1 22 2.44 22Z"/>
+    <path fill="#fff" d="M18.94 18.94h-3.26v-5.56c0-1.52-.58-2.37-1.79-2.37-1.3 0-2 .88-2 2.37v5.56H8.76V8.35h3.15v1.43s.94-1.75 3.19-1.75 3.85 1.37 3.85 4.2v6.71ZM5 6.96a1.95 1.95 0 0 1-1.94-1.95c0-1.08.86-1.95 1.94-1.95 1.07 0 1.94.87 1.94 1.95S6.07 6.96 5 6.96ZM3.37 18.94h3.28V8.35H3.37v10.6Z"/>
+  </g>
+  <defs>
+    <clipPath id="linkedin-clip-path">
+      <path fill="#fff" d="M0 0h22v22H0z"/>
+    </clipPath>
+  </defs>
+</svg>
