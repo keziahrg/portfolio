@@ -1,4 +1,4 @@
-# Keziah Rackley-Gale / Full Stack Developer
+# Keziah Rackley-Gale / Senior Full-Stack Developer
 
 ## 👋 Welcome to my Portfolio
 
