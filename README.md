@@ -1,8 +1,8 @@
-# Keziah Rackley-Gale / Senior Full-Stack Developer
+# Keziah Rackley-Gale / Senior Full Stack Developer
 
 ## 👋 Welcome to my Portfolio
 
-Kia ora! My name's Keziah. I’m a senior full-stack developer working with React, React Native, TypeScript, and Node.js 👩‍💻✨
+Kia ora! My name's Keziah. I’m a senior full stack developer working with React, React Native, TypeScript, and Node.js 👩‍💻✨
 
 ## 🚀 Project Structure
 
